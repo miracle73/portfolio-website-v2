@@ -1,113 +1,125 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import secondPicture from '../../public/secondPicture.png'
+import thirdPicture from '../../public/thirdPicture.png'
+import fourthPicture from '../../public/person.png'
+import dotGrid from '../../public/dotGrid.png'
+import { BiLogoFacebook } from 'react-icons/bi'
+import { AiOutlineInstagram } from 'react-icons/ai'
+import { RiTwitterXFill } from 'react-icons/ri'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="min-h-screen max-w-screen bg-neutral-700">
+      <div className='h-20 '>
+        <div className=" justify-between px-10 flex items-center h-1/2 text-white">
+          <p><Link href="/"> Podcast</Link></p>
+          <p><Link href="/">Newsletter</Link></p>
+        </div>
+        <div className='bg-purple-600 bg-opacity-50 text-white text-sm justify-between flex items-center px-10 max-sm:px-2 h-1/2'>
+          <div className='justify-around flex items-center gap-8'>
+            <p><Link href="/">Shop</Link></p>
+            <p><Link href="/">Services</Link></p>
+          </div>
+          <div className='justify-around flex items-center gap-8'>
+            <p><Link href="/">Backyard rav</Link></p>
+            <p><Link href="/">About</Link></p>
+          </div>
+        </div>
+      </div>
+      <div className="h-[40rem] bg-[url('../../public/firstPicture.png')] flex bg-cover">
+        {/* <Image src={firstPicture} alt="background picture" className='h-[40rem]' /> */}
+        {/* <div className='self-center mx-auto text-white w-2/3 flex flex-col'>
+          <p className=" text-center text-[64px] max-lg:text-[44px] max-md:text-[34px] max-sm:text-[24px] font-semibold font-[' Poppins'] mb-5 ">The #1 Podcast for Creators & Creatives</p>
+          <p className="text-center text-xl  max-md:text-lg max-sm:text-base font-normal font-[' Poppins'] mb-5">We cover the latest & greatest News from the Creative Field.</p>
+
+        </div> */}
+
+      </div>
+      <div className=' py-8 px-10 max-lg:hidden'>
+        <div className='bg-purple-600 rounded-md px-5 max-w-fit mb-8 text-white'>ABOUT ME</div>
+        <div className='flex '>
+          <div className='w-1/2  '>
+            <div className=" text-white text-xl font-normal font-['Poppins'] w-full">Hey there! I'm Joe, and I'm thrilled to welcome you to my Portfolio. I'm a passionate storyteller, a lifelong explorer of ideas, and your host on this audio journey.
+              I've always been captivated by the power of the spoken word and the magic of a well-told story. Whether it's diving into fascinating conversations with thought leaders, sharing personal anecdotes, or exploring niche interests, I'm here to make your listening experience enriching and enjoyable.
+              When I'm not behind the microphone, you can find me making Marketing Research. I draw inspiration from the everyday, and I'm excited to share those insights with you.
+              Join me on this podcast as we embark on a voyage of discovery, where we'll explore, learn, and laugh together. Feel free to reach out, connect, and share your thoughts – your voice is an essential part of this community.
+              Thanks for being a part of this journey, and I can't wait to have you as a listener. So, let's dive in and make some audio magic together!</div>
+          </div>
+          <div className='w-1/2  flex flex-col '>
+            <div className=' flex items-center m-auto '>
+              <Image src={fourthPicture} alt="second Picture" className=''></Image>
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+      <div className='py-8 max-sm:px-2 px-10'>
+        <div className='bg-purple-600 rounded-md px-5 max-w-fit mb-8 max-sm:mb-2 text-white'>LATEST EPISODES</div>
+        <div className="text-white text-[44px] max-lg:text-[34px] max-md:text-[24px] max-sm:mb-2 max-sm:text-[18px] font-semibold font-[' Poppins']">Listen to our newest Episodes</div>
+        <div className='flex justify-between items-center mb-5'>
+          <div className='text-white'>Podcast</div>
+          <div className="p-2.5 bg-purple-600 rounded-lg justify-center items-center gap-2.5 inline-flex">
+            <div className="text-white text-sm font-normal font-['Poppins']">See more</div>
+          </div>
+        </div>
+        <div className='flex items-center justify-between '>
+          <div className='w-[30%] max-sm:w-[90%] max-sm:mx-auto shadow-md pb-5 rounded-md'>
+            <div className="bg-[url('../../public/thirdPicture.png')] mb-5 bg-cover  h-56">
+
+            </div>
+            <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div>
+            <div className="text-white text-xl font-semibold font-['Poppins'] mb-5">Will AI Change The Way Creatives Work</div>
+            <div className="text-white text-lg font-normal font-['Lato']">In the rapidly evolving landscape of technology, Artificial Intelligence (AI) is making profound impacts across various industries...<span className="text-purple-600 text-lg font-normal font-['Lato']">Listen to Episodes</span></div>
+          </div>
+          <div className='w-[30%] max-sm:hidden  shadow-md pb-5 rounded-md'>
+            <div className="bg-[url('../../public/thirdPicture.png')] mb-5 bg-cover   h-56">
+
+            </div>
+            <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div>
+            <div className="text-white text-xl font-semibold font-['Poppins'] mb-5">Will AI Change The Way Creatives Work</div>
+            <div className="text-white text-lg font-normal font-['Lato']">In the rapidly evolving landscape of technology, Artificial Intelligence (AI) is making profound impacts across various industries...<span className="text-purple-600 text-lg font-normal font-['Lato']">Listen to Episodes</span></div>
+          </div>
+          <div className='w-[30%] max-sm:hidden shadow-md pb-5 rounded-md'>
+            <div className="bg-[url('../../public/thirdPicture.png')] mb-5 bg-cover  h-56">
+
+            </div>
+            <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div>
+            <div className="text-white text-xl font-semibold font-['Poppins'] mb-5">Will AI Change The Way Creatives Work</div>
+            <div className="text-white text-lg font-normal font-['Lato']">In the rapidly evolving landscape of technology, Artificial Intelligence (AI) is making profound impacts across various industries...<span className="text-purple-600 text-lg font-normal font-['Lato']">Listen to Episodes</span></div>
+          </div>
+        </div>
+        <div className="text-white text-[24px] font-semibold font-['Poppins'] mt-20 text-center">Contact me</div>
+        <div className='flex flex-col justify-center items-center gap-2'>
+          <input className=" bg-white border border-zinc-300 px-8" type="text" placeholder="Enter your email address" />
+          <button className='bg-purple-600 rounded-lg justify-center mx-auto px-2 py-1 text-center inline-flex text-white'>
+            submit
+          </button>
+        </div>
+
+      </div>
+      <div className='border-t-2 py-5 flex max-sm:flex-col max-sm:gap-4 items-center px-10'>
+        <p className='w-2/3 text-end max-sm:text-center text-white max-sm:w-full'>Copyright © 2023 Joe Podcast. All rights reserved.</p>
+        <div className='inline-flex justify-end items-center w-1/3 gap-4 text-white'>
+          <div>
+            <BiLogoFacebook />
+          </div>
+          <div>
+            < AiOutlineInstagram />
+          </div>
+
+          {/* < FaXTwitter /> */}
+          <div>
+            < RiTwitterXFill />
+          </div>
+
+
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </main >
   )
 }
