@@ -50,25 +50,25 @@ export default function Home() {
 
         <div className='flex items-center justify-between '>
           <div className='w-[30%] max-sm:w-[90%] max-sm:mx-auto shadow-2xl pb-5 rounded-md hover:cursor-pointer'>
-            <div className="relative bg-[url('../../public/podcast1.jpeg')] mb-5 bg-cover  h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
+            <div className=" bg-[url('../../public/podcast1.jpeg')] mb-5 bg-cover  h-56 flex hover:bg-blend-multiply hover:bg-gray-500 items-end pb-2 hover:pb-4 justify-center">
               {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
-              <div className="text-white  hover:self-center text-xl font-semibold font-['Poppins'] hover:bottom-6 absolute bottom-2 left-8 text-center">The Role of Finance in Relationships</div>
+              <div className="text-white text-xl max-lg:text-base  font-semibold font-['Poppins'] text-center">The Role of Finance in Relationships</div>
             </div>
 
 
           </div>
           <div className='w-[30%] max-sm:hidden  shadow-md pb-5 rounded-md'>
-            <div className="relative bg-[url('../../public/podcast2.jpeg')] mb-5 bg-cover hover:cursor-pointer  h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
+            <div className=" bg-[url('../../public/podcast2.jpeg')] mb-5 bg-cover hover:cursor-pointer  h-56 flex hover:bg-blend-multiply items-end pb-2 hover:pb-4 justify-center hover:bg-gray-500">
               {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
-              <div className="text-white hover:bottom-6 absolute bottom-2 left-0 text-xl font-semibold font-['Poppins'] text-center">Career Change: How to Navigate and Manage the Risks</div>
+              <div className="text-white  text-xl max-lg:text-base  font-semibold font-['Poppins'] text-center">Career Change: How to Navigate and Manage the Risks</div>
             </div>
 
 
           </div>
           <div className='w-[30%]  max-sm:hidden shadow-md pb-5 rounded-md'>
-            <div className="relative bg-[url('../../public/podcast3.jpeg')] mb-5 bg-cover hover:cursor-pointer h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
+            <div className="bg-[url('../../public/podcast3.jpeg')] mb-5 bg-cover hover:cursor-pointer h-56 flex hover:bg-blend-multiply hover:bg-gray-500 items-end pb-2 hover:pb-4 justify-center">
               {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
-              <div className="text-white text-xl hover:bottom-6 absolute bottom-2 left-20 font-semibold font-['Poppins'] text-center">Do You Love Yourself</div>
+              <div className="text-white text-xl max-lg:text-base  font-semibold font-['Poppins'] text-center">Do You Love Yourself</div>
             </div>
 
 
@@ -85,7 +85,7 @@ export default function Home() {
       </div>
       <div className='border-t-2 py-5 flex max-sm:flex-col max-sm:gap-4 items-center px-10'>
         <p className='w-2/3 text-end max-sm:text-center text-white max-sm:w-full'>Copyright © 2023  BJ Baringo. All rights reserved.</p>
-        <div className='inline-flex justify-end items-center w-1/3 gap-4 text-white'>
+        <div className='inline-flex justify-end max-sm:justify-center items-center w-1/3 gap-4 text-white'>
           <div>
             <BiLogoFacebook />
           </div>
