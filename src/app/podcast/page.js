@@ -13,8 +13,8 @@ function page() {
     return (
         <div className="min-h-screen max-w-screen relative">
             <div className=" py-2 h-20 px-10 max-sm:px-2 mt-24 flex flex-col justify-center items-center pt-16">
-                <div className="text-black text-[46px] font-bold font-['Poppins']">Explore Our Podcasts</div>
-                <div className="text-black text-xl font-normal font-['Poppins'] ">Listen to our Latest Podcast</div>
+                <div className="text-black text-[46px] max-lg:text-[36px] max-md:text-[26px] max-sm:text-xl font-bold font-['Poppins']">Explore Our Podcasts</div>
+                <div className="text-black text-xl max-lg:text-lg max-md:text-base max-sm:text-sm font-normal font-['Poppins'] ">Listen to our Latest Podcast</div>
             </div>
             <div className='flex flex-col justify-center items-center pb-10'>
                 <div className='py-8 max-sm:px-2 px-10 mt-5 w-full'>
@@ -89,27 +89,27 @@ function page() {
             </div>
 
             <div className='bg-slate-100 py-5'>
-                <div className="text-black text-[24px] font-semibold font-['Poppins'] text-center">Subscribe and listen on every major platform</div>
-                <div className="text-center text-black text-xl font-normal font-['Poppins']">Our podcast is available on a growing number of platforms. Listen on your<br />prefered app to get the best experience.</div>
-                <div className='flex justify-around items-center mt-5'>
-                    <div className=" bg-white rounded-[14.57px] border border-zinc-300 justify-center items-center inline-flex px-2 gap-2">
+                <div className="text-black text-[24px] font-semibold font-['Poppins'] text-center max-md:px-5">Subscribe and listen on every major platform</div>
+                <div className="text-center text-black text-xl font-normal font-['Poppins'] max-md:px-5">Our podcast is available on a growing number of platforms. Listen on your<br />prefered app to get the best experience.</div>
+                <div className='flex flex-wrap justify-around items-center mt-5'>
+                    <div className=" bg-white rounded-[14.57px] border border-zinc-300 justify-center items-center inline-flex px-2 gap-2 my-1">
                         <Image className="w-10 h-10" src={Apple} />
                         <div><span className="text-black text-opacity-75 text-sm font-normal font-['Poppins']">Listen on<br /></span><span className="text-black text-xl font-semibold font-['Poppins']">Apple Podcasts</span></div>
                     </div>
-                    <div className=" bg-white rounded-[14.57px] border border-zinc-300 justify-center items-center inline-flex px-2 gap-2">
+                    <div className=" bg-white rounded-[14.57px] border border-zinc-300 justify-center items-center inline-flex px-2 gap-2 my-1">
                         <Image className="w-10 h-10" src={Youtube} />
                         <div><span className="text-black text-opacity-75 text-sm font-normal font-['Poppins']">Watch & Listen on<br /></span><span className="text-black text-xl font-semibold font-['Poppins']">Youtube</span></div>
                     </div>
-                    <div className=" bg-white rounded-[14.57px] border border-zinc-300 justify-center items-center inline-flex px-2 gap-2">
+                    <div className=" bg-white rounded-[14.57px] border border-zinc-300 justify-center items-center inline-flex px-2 gap-2 my-1">
                         <Image className="w-10 h-10" src={Spotify} />
                         <div><span className="text-black text-opacity-75 text-sm font-normal font-['Poppins']">Listen on<br /></span><span className="text-black text-xl font-semibold font-['Poppins']">Spotify</span></div>
                     </div>
-                    <div className=" bg-white rounded-[14.57px] border border-zinc-300 justify-center items-center inline-flex px-2 gap-2">
+                    <div className=" bg-white rounded-[14.57px] border border-zinc-300 justify-center items-center inline-flex px-2 gap-2 my-1">
                         <Image className="w-10 h-10" src={Google} />
                         <div><span className="text-black text-opacity-75 text-sm font-normal font-['Poppins']">Listen on<br /></span><span className="text-black text-xl font-semibold font-['Poppins']">Google</span><span className="text-black text-sm font-normal font-['Poppins']"> </span><span className="text-black text-opacity-75 text-xl font-semibold font-['Poppins']">Podcast</span></div>
 
                     </div>
-                    <div className=" bg-white rounded-[14.57px] border border-zinc-300 justify-center items-center inline-flex px-2 gap-2">
+                    <div className=" bg-white rounded-[14.57px] border border-zinc-300 justify-center items-center inline-flex px-2 gap-2 my-1">
                         <Image className="w-10 h-10" src={SoundCloud} />
                         <div><span className="text-black text-opacity-75 text-sm font-normal font-['Poppins']">Listen on<br /></span><span className="text-black text-xl font-semibold font-['Poppins']">SoundCloud</span></div>
                     </div>
@@ -123,8 +123,8 @@ function page() {
                 </button>
             </div>
             <div className='border-t-2  py-5 flex max-sm:flex-col max-sm:gap-4 items-center px-10 mt-5'>
-                <p className='w-2/3 text-end max-sm:text-center text-white max-sm:w-full'>Copyright © 2023  BJ Baringo. All rights reserved.</p>
-                <div className='inline-flex justify-end items-center w-1/3 gap-4 text-black'>
+                <p className='w-2/3 text-end max-sm:text-center text-black max-sm:w-full'>Copyright © 2023  BJ Baringo. All rights reserved.</p>
+                <div className='inline-flex justify-end max-sm:justify-center items-center w-1/3 gap-4 text-black'>
                     <div>
                         <BiLogoFacebook />
                     </div>

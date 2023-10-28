@@ -23,7 +23,7 @@ const Header = () => {
                 ></script>
             </Head>
             <div className='h-24 fixed top-0 w-full bg-black pb-3 z-10 md:hidden flex justify-center items-center'>
-                <FontAwesomeIcon icon={faBars} className="absolute top-8 left-5 w-6" style={{ color: "red" }} onClick={handleClick}
+                <FontAwesomeIcon icon={faBars} className="absolute top-8 left-5 w-6" style={{ color: "white" }} onClick={handleClick}
                 ></FontAwesomeIcon>
                 <div className='text-lg font-semibold text-white'>BJ BARINGO</div>
             </div>
