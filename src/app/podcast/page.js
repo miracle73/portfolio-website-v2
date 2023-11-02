@@ -83,12 +83,12 @@ function page() {
                 </div>
 
 
-                <div className="px-4 mx-auto py-2 bg-blue-700 rounded-lg justify-center items-center gap-2.5 inline-flex">
+                <div className="px-4 mx-auto py-2 bg-black rounded-lg justify-center items-center gap-2.5 inline-flex">
                     <div className="text-white text-sm font-normal font-['Poppins']">See more</div>
                 </div>
             </div>
 
-            <div className='bg-slate-100 py-5'>
+            <div className=' py-5'>
                 <div className="text-black text-[24px] font-semibold font-['Poppins'] text-center max-md:px-5">Subscribe and listen on every major platform</div>
                 <div className="text-center text-black text-xl font-normal font-['Poppins'] max-md:px-5">Our podcast is available on a growing number of platforms. Listen on your<br />prefered app to get the best experience.</div>
                 <div className='flex flex-wrap justify-around items-center mt-5'>
@@ -115,7 +115,7 @@ function page() {
                     </div>
                 </div>
             </div>
-            <div className="text-black text-[24px] font-semibold font-['Poppins'] mt-10 text-center">Contact me</div>
+            {/* <div className="text-black text-[24px] font-semibold font-['Poppins'] mt-10 text-center">Contact me</div>
             <div className='flex flex-col justify-center items-center gap-2'>
                 <input className=" bg-white border border-zinc-300 px-8" type="text" placeholder="Enter your email address" />
                 <button className='bg-black rounded-lg justify-center mx-auto px-2 py-1 text-center inline-flex text-white'>
@@ -132,14 +132,14 @@ function page() {
                         < AiOutlineInstagram />
                     </div>
 
-                    {/* < FaXTwitter /> */}
+                   
                     <div>
                         < RiTwitterXFill />
                     </div>
 
 
                 </div>
-            </div>
+            </div> */}
         </div>
 
     )
