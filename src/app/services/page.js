@@ -13,7 +13,7 @@ import { RiTwitterXFill } from 'react-icons/ri'
 
 const page = () => {
     return (
-        <div className="min-h-screen max-w-screen relative">
+        <div className="min-h-screen max-w-screen relative font-font1">
             <div className=" py-2 h-20 px-10 max-sm:px-2 mt-24 flex flex-col justify-center items-center pt-16">
                 <div className="text-black text-[36px] max-lg:text-[36px]  max-md:text-3xl font-bold font-['Poppins']">My Creative Expertise</div>
 

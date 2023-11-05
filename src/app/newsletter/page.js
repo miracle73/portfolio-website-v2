@@ -8,7 +8,7 @@ import { RiTwitterXFill } from 'react-icons/ri'
 
 function page() {
     return (
-        <div className="min-h-screen max-w-screen relative">
+        <div className="min-h-screen max-w-screen relative font-font1">
             <div className="border-t-2  border-white py-2 h-80 max-lg:h-[25rem] max-sm:h-[32rem] px-10 max-sm:px-2 top-24 flex flex-col  justify-center  pb-16  bg-black absolute w-full ">
                 <div className="text-white pl-20 max-md:pl-10 text-[46px] font-bold font-['Poppins']">Newsletter</div>
                 <div className="text-white pl-20 max-md:pl-10 text-xl font-normal font-['Poppins'] ">A curated collection of 20 newsletters websites for inspiration and references. Each review includes a full screenshot of the website design along with noteworthy features. These Landing Pages promote

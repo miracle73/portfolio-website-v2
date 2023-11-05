@@ -6,6 +6,9 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      'font1': ['Poppins', 'sans-serif'],
+    },
     screens: {
       xsm: "420px",
       sm: "640px",
@@ -17,6 +20,7 @@ module.exports = {
       // => @media (min-width: 640px) { ... }
     },
     extend: {
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -28,5 +32,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }

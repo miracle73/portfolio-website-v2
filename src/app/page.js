@@ -10,7 +10,7 @@ import { RiTwitterXFill } from 'react-icons/ri'
 
 export default function Home() {
   return (
-    <main className="min-h-screen max-w-screen bg-black relative">
+    <main className="min-h-screen max-w-screen bg-black relative font-font1">
 
       <div className="h-[40rem] bg-[url('../../public/finePicture2.jpeg')] flex bg-cover mt-24">
         {/* <Image src={firstPicture} alt="background picture" className='h-[40rem]' /> */}
@@ -26,7 +26,7 @@ export default function Home() {
         <div className='flex '>
 
           <div className="w-1/2 text-white text-xl font-normal font-['Poppins'] italic">
-            <div className='bg-blue-400 rounded-md px-5 max-w-fit mb-8 text-white'>ABOUT ME</div>
+            <div className='bg-white rounded-md px-5 max-w-fit mb-8 text-black'>ABOUT ME</div>
             <div className="  mb-3">Hey there! I'm BJ Baringo, and I'm thrilled to welcome you to my Portfolio. I'm a passionate storyteller, a lifelong explorer of ideas, and your host on this audio journey.
               I've always been captivated by the power of the spoken word and the magic of a well-told story.
             </div>
@@ -45,7 +45,7 @@ export default function Home() {
 
       </div>
       <div className='py-8 max-sm:px-2 px-10'>
-        <div className='bg-blue-400 rounded-md px-5 max-w-fit mb-8 max-sm:mb-2 text-white hover:cursor-pointer'>LATEST EPISODES</div>
+        <div className='bg-white rounded-md px-5 max-w-fit mb-8 max-sm:mb-2 text-black hover:cursor-pointer'>LATEST EPISODES</div>
         <div className="text-white text-[44px] max-lg:text-[34px] max-md:text-[24px] max-sm:mb-2 max-sm:text-[18px] font-semibold font-[' Poppins'] mb-5">Listen to my latest podcasts</div>
 
         <div className='flex items-center justify-between '>
@@ -77,7 +77,7 @@ export default function Home() {
         <div className="text-white text-[24px] font-semibold font-['Poppins'] mt-20 text-center">Contact me</div>
         <div className='flex flex-col justify-center items-center gap-2'>
           <input className=" bg-white border border-zinc-300 px-8" type="text" placeholder="Enter your email address" />
-          <button className='bg-blue-400 rounded-lg justify-center mx-auto px-2 py-1 text-center inline-flex text-white'>
+          <button className='bg-white rounded-lg justify-center mx-auto px-2 py-1 text-center inline-flex text-black font-bold'>
             submit
           </button>
         </div>

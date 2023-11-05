@@ -1,5 +1,6 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useRef } from 'react'
 import Google from '../../../public/Google.png'
 import Youtube from '../../../public/youtube.png'
 import SoundCloud from '../../../public/soundcloud.png'
@@ -10,8 +11,24 @@ import { AiOutlineInstagram } from 'react-icons/ai'
 import { RiTwitterXFill } from 'react-icons/ri'
 
 function page() {
+
+    let lastScrollX;
+    if (process.browser) {
+        lastScrollX = window.pageXOffset || window.scrollX;
+        const slideer = document.getElementById("sliderItem")
+        slideer && slideer.addEventListener('scroll', function (event) {
+            let currentScrollX = window.pageXOffset || window.scrollX;
+            if (lastScrollX !== currentScrollX) {
+                // Horizontal scrolling has occurred
+                // The scroll event code goes here
+                slideer.scrollLeft = slideer.scrollLeft + 500
+            }
+            lastScrollX = currentScrollX;
+        });
+    }
+
     return (
-        <div className="min-h-screen max-w-screen relative">
+        <div className="min-h-screen max-w-screen relative font-font1" >
             <div className=" py-2 h-20 px-10 max-sm:px-2 mt-24 flex flex-col justify-center items-center pt-16">
                 <div className="text-black text-[46px] max-lg:text-[36px] max-md:text-[26px] max-sm:text-xl font-bold font-['Poppins']">Explore Our Podcasts</div>
                 <div className="text-black text-xl max-lg:text-lg max-md:text-base max-sm:text-sm font-normal font-['Poppins'] ">Listen to our Latest Podcast</div>
@@ -19,65 +36,123 @@ function page() {
             <div className='flex flex-col justify-center items-center pb-10'>
                 <div className='py-8 max-sm:px-2 px-10 mt-5 w-full'>
                     <div className='bg-black rounded-md px-5 max-w-fit mb-8 max-sm:mb-2 text-white hover:cursor-pointer'>Career</div>
-                    <div className='flex items-center justify-between '>
-                        <div className='w-[30%] relative overflow-hidden max-sm:w-[90%] max-sm:mx-auto shadow-md pb-2 rounded-md hover:cursor-pointer'>
-                            <div className=" bg-[url('../../public/career1.jpeg')] bg-cover  h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
-                                {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
+                    <div className='flex items-center justify-between relative'>
+                        <div className='w-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'>
+                            <div id="sliderItem" className='w-[30%] max-lg:w-[35%] max-sm:w-[55%] max-xsm:w-[65%] relative overflow-hidden shadow-md pb-2 rounded-md hover:cursor-pointer inline-block hover:scale-105 ease-in-out duration-300 mx-3'>
+                                <div className=" bg-[url('../../public/career1.jpeg')] bg-cover  h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
+                                    {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
+
+                                </div>
+                                <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 1</div>
+                                <div className="text-gray-900  text-sm font-semibold font-['Poppins']  text-center">The Early days of your Career</div>
 
                             </div>
-                            <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 1</div>
-                            <div className="text-gray-900  text-sm font-semibold font-['Poppins']  text-center">The Early days of your Career</div>
+                            <div id="sliderItem" className='w-[30%] max-lg:w-[35%] max-sm:w-[55%] max-xsm:w-[65%] relative overflow-hidden shadow-md pb-2 rounded-md hover:cursor-pointer inline-block hover:scale-105 ease-in-out duration-300 mx-3'>
+                                <div className=" bg-[url('../../public/career2.jpeg')] bg-cover hover:cursor-pointer  h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
+                                    {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
 
-                        </div>
-                        <div className='w-[30%]  overflow-hidden  shadow-md pb-2 rounded-md'>
-                            <div className=" bg-[url('../../public/career2.jpeg')] bg-cover hover:cursor-pointer  h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
-                                {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
-
-                            </div>
-                            <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 2</div>
-                            <div className="text-gray-900   text-sm font-semibold font-['Poppins'] text-center">Career Change: How to Navigate and Manage the Risks</div>
-
-                        </div>
-                        <div className='w-[30%] overflow-hidden  shadow-md pb-2 rounded-md'>
-                            <div className=" bg-[url('../../public/career3.jpeg')] bg-cover hover:cursor-pointer h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
-                                {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
+                                </div>
+                                <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 2</div>
+                                <div className="text-gray-900   text-sm font-semibold font-['Poppins'] text-center">Career Change: How to Navigate and Manage the Risks</div>
 
                             </div>
-                            <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 3</div>
-                            <div className="text-gray-900  text-sm  font-semibold font-['Poppins'] text-center">Solving Stress at Work</div>
+                            <div id="sliderItem" className='w-[30%] max-lg:w-[35%] max-sm:w-[55%] max-xsm:w-[65%] relative overflow-hidden shadow-md pb-2 rounded-md hover:cursor-pointer inline-block hover:scale-105 ease-in-out duration-300 mx-3'>
+                                <div className=" bg-[url('../../public/career3.jpeg')] bg-cover hover:cursor-pointer h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
+                                    {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
 
+                                </div>
+                                <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 3</div>
+                                <div className="text-gray-900  text-sm  font-semibold font-['Poppins'] text-center">Solving Stress at Work</div>
+
+                            </div>
+                            <div id="sliderItem" className='w-[30%] max-lg:w-[35%] max-sm:w-[55%] max-xsm:w-[65%] relative overflow-hidden shadow-md pb-2 rounded-md hover:cursor-pointer inline-block hover:scale-105 ease-in-out duration-300 mx-3'>
+                                <div className=" bg-[url('../../public/career3.jpeg')] bg-cover hover:cursor-pointer h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
+                                    {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
+
+                                </div>
+                                <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 3</div>
+                                <div className="text-gray-900  text-sm  font-semibold font-['Poppins'] text-center">Solving Stress at Work</div>
+
+                            </div>
+                            <div id="sliderItem" className='w-[30%] max-lg:w-[35%] max-sm:w-[55%] max-xsm:w-[65%] relative overflow-hidden shadow-md pb-2 rounded-md hover:cursor-pointer inline-block hover:scale-105 ease-in-out duration-300 mx-3'>
+                                <div className=" bg-[url('../../public/career3.jpeg')] bg-cover hover:cursor-pointer h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
+                                    {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
+
+                                </div>
+                                <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 3</div>
+                                <div className="text-gray-900  text-sm  font-semibold font-['Poppins'] text-center">Solving Stress at Work</div>
+
+                            </div>
+                            <div id="sliderItem" className='w-[30%] max-lg:w-[35%] max-sm:w-[55%] max-xsm:w-[65%] relative overflow-hidden shadow-md pb-2 rounded-md hover:cursor-pointer inline-block hover:scale-105 ease-in-out duration-300 mx-3'>
+                                <div className=" bg-[url('../../public/career3.jpeg')] bg-cover hover:cursor-pointer h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
+                                    {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
+
+                                </div>
+                                <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 3</div>
+                                <div className="text-gray-900  text-sm  font-semibold font-['Poppins'] text-center">Solving Stress at Work</div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className='py-8 max-sm:px-2 px-10 mt-5 w-full'>
                     <div className='bg-black rounded-md px-5 max-w-fit mb-8 max-sm:mb-2 text-white hover:cursor-pointer'>Relationships</div>
-                    <div className='flex items-center justify-between '>
-                        <div className='w-[30%] relative overflow-hidden max-sm:w-[90%] max-sm:mx-auto shadow-md pb-2 rounded-md hover:cursor-pointer'>
-                            <div className=" bg-[url('../../public/relationship1.jpeg')]  bg-cover  h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
-                                {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
+                    <div className='flex items-center justify-between relative ' >
+                        <div className='w-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'>
+                            <div id="sliderItem" className='w-[30%] max-lg:w-[35%] max-sm:w-[55%] max-xsm:w-[65%] relative overflow-hidden shadow-md pb-2 rounded-md hover:cursor-pointer inline-block hover:scale-105 ease-in-out duration-300 mx-3'>
+                                <div className=" bg-[url('../../public/relationship1.jpeg')]  bg-cover  h-56 flex ">
+                                    {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
+
+                                </div>
+                                <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 1</div>
+                                <div className="text-gray-900  hover:self-center text-sm font-semibold font-['Poppins']  text-center">Love at First Sight</div>
 
                             </div>
-                            <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 1</div>
-                            <div className="text-gray-900  hover:self-center text-sm font-semibold font-['Poppins']  text-center">Love at First Sight</div>
+                            <div id="sliderItem" className='mx-3 w-[30%] max-lg:w-[35%] max-sm:w-[55%] max-xsm:w-[65%]  overflow-hidden  shadow-md pb-2 rounded-md inline-block hover:scale-105 ease-in-out duration-300'>
+                                <div className=" bg-[url('../../public/relationship2.jpeg')]  bg-cover hover:cursor-pointer  h-56 flex ">
+                                    {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
 
-                        </div>
-                        <div className='w-[30%]  overflow-hidden  shadow-md pb-2 rounded-md'>
-                            <div className=" bg-[url('../../public/relationship2.jpeg')]  bg-cover hover:cursor-pointer  h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
-                                {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
-
-                            </div>
-                            <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 2</div>
-                            <div className="text-gray-900   text-sm font-semibold font-['Poppins'] text-center">How do U know U attracted the Right Partner</div>
-
-                        </div>
-                        <div className='w-[30%] overflow-hidden  shadow-md pb-2 rounded-md'>
-                            <div className=" bg-[url('../../public/relationship3.jpeg')]  bg-cover hover:cursor-pointer h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
-                                {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
+                                </div>
+                                <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 2</div>
+                                <div className="text-gray-900   text-sm font-semibold font-['Poppins'] text-center">How do U know U attracted the Right Partner</div>
 
                             </div>
-                            <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 3</div>
-                            <div className="text-gray-900  text-sm  font-semibold font-['Poppins'] text-center">Creating Boundaries in Relationships</div>
+                            <div id="sliderItem" className='mx-3 w-[30%] max-lg:w-[35%] max-sm:w-[55%] max-xsm:w-[65%] overflow-hidden  shadow-md pb-2 rounded-md inline-block hover:scale-105 ease-in-out duration-300'>
+                                <div className=" bg-[url('../../public/relationship3.jpeg')]  bg-cover hover:cursor-pointer h-56 flex ">
+                                    {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
 
+                                </div>
+                                <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 3</div>
+                                <div className="text-gray-900  text-sm  font-semibold font-['Poppins'] text-center">Creating Boundaries in Relationships</div>
+
+                            </div>
+                            <div id="sliderItem" className='mx-3 w-[30%] max-lg:w-[35%] max-sm:w-[55%] max-xsm:w-[65%] overflow-hidden  shadow-md pb-2 rounded-md inline-block hover:scale-105 ease-in-out duration-300'>
+                                <div className=" bg-[url('../../public/relationship3.jpeg')]  bg-cover hover:cursor-pointer h-56 flex ">
+                                    {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
+
+                                </div>
+                                <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 3</div>
+                                <div className="text-gray-900  text-sm  font-semibold font-['Poppins'] text-center">Creating Boundaries in Relationships</div>
+
+                            </div>
+                            <div id="sliderItem" className='mx-3 w-[30%] max-lg:w-[35%] max-sm:w-[55%] max-xsm:w-[65%] overflow-hidden  shadow-md pb-2 rounded-md inline-block hover:scale-105 ease-in-out duration-300'>
+                                <div className=" bg-[url('../../public/relationship3.jpeg')]  bg-cover hover:cursor-pointer h-56 flex ">
+                                    {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
+
+                                </div>
+                                <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 3</div>
+                                <div className="text-gray-900  text-sm  font-semibold font-['Poppins'] text-center">Creating Boundaries in Relationships</div>
+
+                            </div>
+                            <div id="sliderItem" className='mx-3 w-[30%] max-lg:w-[35%] max-sm:w-[55%] max-xsm:w-[65%] overflow-hidden  shadow-md pb-2 rounded-md inline-block hover:scale-105 ease-in-out duration-300'>
+                                <div className=" bg-[url('../../public/relationship3.jpeg')]  bg-cover hover:cursor-pointer h-56 flex ">
+                                    {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
+
+                                </div>
+                                <div className="text-gray-900   text-lg uppercase font-semibold font-['Poppins']   text-center">Episode 3</div>
+                                <div className="text-gray-900  text-sm  font-semibold font-['Poppins'] text-center">Creating Boundaries in Relationships</div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
