@@ -21,3 +21,10 @@ body {
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
+
+.customModal .ReactModal__Content {
+  width: 50%;
+  /* Adjust the width as needed */
+  height: 50%;
+  /* Adjust the height as needed */
+}

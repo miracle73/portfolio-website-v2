@@ -1,12 +1,43 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from 'react-modal';
+
 
 import { BiLogoFacebook } from 'react-icons/bi'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { RiTwitterXFill } from 'react-icons/ri'
 
 
+
 function page() {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const openModal = () => {
+        setModalIsOpen(true);
+    }
+
+    const closeModal = () => {
+        setModalIsOpen(false);
+    }
+    const modal = (
+        <Modal
+            className={"w-[50%] h-[50%] m-auto"}
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            contentLabel="Newsletter Modal"
+        >
+            <div className='flex flex-col justify-center items-center mt-52'>
+                <h2>Sign up for our newsletter</h2>
+                <button onClick={closeModal}>Close</button>
+                <form>
+                    <input type="email" placeholder="Enter your email" />
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </Modal>
+    )
     return (
         <div className="min-h-screen max-w-screen relative font-font1">
             <div className="border-t-2  border-white py-2 h-80 max-lg:h-[25rem] max-sm:h-[32rem] px-10 max-sm:px-2 top-24 flex flex-col  justify-center  pb-16  bg-black absolute w-full ">
@@ -23,19 +54,20 @@ function page() {
                                 {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
 
                             </div>
-                            <div className='flex items-center justify-center  h-[22.2%] '>
+                            <div className='flex items-center justify-center  h-[22.2%] ' onClick={openModal}>
                                 <div className="text-gray-900  text-sm font-semibold font-['Poppins']  text-center uppercase">Everything u need to know about design</div>
                             </div>
+                            {modalIsOpen && modal}
                         </div>
                         <div className='w-[30%] max-sm:border-2 h-[18rem] max-sm:w-[90%] max-sm:mx-auto shadow-md pb-2 '>
                             <div className=" bg-[url('../../public/secondnew.jpg')] bg-cover hover:cursor-pointer  h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
                                 {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
 
                             </div>
-                            <div className='flex items-center justify-center  h-[22.2%]  '>
+                            <div className='flex items-center justify-center  h-[22.2%]  ' onClick={openModal}>
                                 <div className="text-gray-900   text-sm font-semibold font-['Poppins'] text-center uppercase">People and Blogs</div>
                             </div>
-
+                            {modalIsOpen && modal}
 
                         </div>
                         <div className='w-[30%] max-sm:border-2 max-sm:w-[90%] max-sm:mx-auto h-[18rem] shadow-md pb-2'>
@@ -43,11 +75,11 @@ function page() {
                                 {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
 
                             </div>
-                            <div className='flex items-center justify-center  h-[22.2%]  '>
+                            <div className='flex items-center justify-center  h-[22.2%]  ' onClick={openModal}>
                                 <div className="text-gray-900  text-sm  font-semibold font-['Poppins'] text-center uppercase">Your design inspiration</div>
                             </div>
 
-
+                            {modalIsOpen && modal}
                         </div>
                     </div>
                 </div>
