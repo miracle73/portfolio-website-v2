@@ -22,17 +22,21 @@ function page() {
     }
     const modal = (
         <Modal
-            className={"w-[50%] h-[50%] m-auto"}
+            className={"w-[50%] h-[50%] m-auto shadow-md border-none"}
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
             contentLabel="Newsletter Modal"
         >
             <div className='flex flex-col justify-center items-center mt-52'>
-                <h2>Sign up for our newsletter</h2>
-                <button onClick={closeModal}>Close</button>
+                <h1 className=' font-semibold text-lg'>Straight from our desk to your inbox</h1>
+                <h2 className='text-[#A6A6A6] text-sm'>Sign up for our newsletter today</h2>
+                {/* <button onClick={closeModal}>Close</button> */}
                 <form>
-                    <input type="email" placeholder="Enter your email" />
-                    <button type="submit">Submit</button>
+                    <div className='flex items-center justify-between rounded-xl overflow-hidden'>
+                        <input type="email" placeholder="Enter your email" className='bg-white text-black w-[70%]' />
+                        <button type="submit" className='bg-blue-500 text-white w-[30%]'>Submit</button>
+                    </div>
+
                 </form>
             </div>
 
