@@ -1,10 +1,19 @@
 import '../styles/globals.css'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
+import { Poppins } from 'next/font/google'
 config.autoAddCss = false
 
-// function MyApp({ Component, pageProps }) {
-//     // return <Component {...pageProps} />
-// }
+const poppins = Poppins({
+    subsets: ['latin'],
+    weight: '400'
+})
 
-// export default MyApp
+function MyApp({ Component, pageProps }) {
+    <main className={poppins.className}>
+        return <Component {...pageProps} />
+    </main>
+
+}
+
+export default MyApp

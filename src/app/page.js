@@ -25,7 +25,7 @@ export default function Home() {
 
         <div className='flex '>
 
-          <div className="w-1/2 text-white text-xl font-normal font-['Poppins'] italic">
+          <div className="w-1/2 text-white text-xl font-normal italic">
             <div className='bg-white rounded-md px-5 max-w-fit mb-8 text-black'>ABOUT ME</div>
             <div className="  mb-3">Hey there! I'm BJ Baringo, and I'm thrilled to welcome you to my Portfolio. I'm a passionate storyteller, a lifelong explorer of ideas, and your host on this audio journey.
               I've always been captivated by the power of the spoken word and the magic of a well-told story.
@@ -46,13 +46,13 @@ export default function Home() {
       </div>
       <div className='py-8 max-sm:px-2 px-10'>
         <div className='bg-white rounded-md px-5 max-w-fit mb-8 max-sm:mb-2 text-black hover:cursor-pointer'>LATEST EPISODES</div>
-        <div className="text-white text-[44px] max-lg:text-[34px] max-md:text-[24px] max-sm:mb-2 max-sm:text-[18px] font-semibold font-[' Poppins'] mb-5">Listen to my latest podcasts</div>
+        <div className="text-white text-[44px] max-lg:text-[34px] max-md:text-[24px] max-sm:mb-2 max-sm:text-[18px] font-semibold  mb-5">Listen to my latest podcasts</div>
 
         <div className='flex items-center justify-between '>
           <div className='w-[30%] max-sm:w-[90%] max-sm:mx-auto shadow-2xl pb-5 rounded-md hover:cursor-pointer'>
             <div className=" bg-[url('../../public/podcast1.jpeg')] mb-5 bg-cover  h-56 flex hover:bg-blend-multiply hover:bg-gray-500 items-end pb-2 hover:pb-4 justify-center">
               {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
-              <div className="text-white text-xl max-lg:text-base  font-semibold font-['Poppins'] text-center">The Role of Finance in Relationships</div>
+              <div className="text-white text-xl max-lg:text-base  font-semibold text-center">The Role of Finance in Relationships</div>
             </div>
 
 
@@ -60,7 +60,7 @@ export default function Home() {
           <div className='w-[30%] max-sm:hidden  shadow-md pb-5 rounded-md'>
             <div className=" bg-[url('../../public/podcast2.jpeg')] mb-5 bg-cover hover:cursor-pointer  h-56 flex hover:bg-blend-multiply items-end pb-2 hover:pb-4 justify-center hover:bg-gray-500">
               {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
-              <div className="text-white  text-xl max-lg:text-base  font-semibold font-['Poppins'] text-center">Career Change: How to Navigate and Manage the Risks</div>
+              <div className="text-white  text-xl max-lg:text-base  font-semibold text-center">Career Change: How to Navigate and Manage the Risks</div>
             </div>
 
 
@@ -68,13 +68,13 @@ export default function Home() {
           <div className='w-[30%]  max-sm:hidden shadow-md pb-5 rounded-md'>
             <div className="bg-[url('../../public/podcast3.jpeg')] mb-5 bg-cover hover:cursor-pointer h-56 flex hover:bg-blend-multiply hover:bg-gray-500 items-end pb-2 hover:pb-4 justify-center">
               {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
-              <div className="text-white text-xl max-lg:text-base  font-semibold font-['Poppins'] text-center">Do You Love Yourself</div>
+              <div className="text-white text-xl max-lg:text-base  font-semibold  text-center">Do You Love Yourself</div>
             </div>
 
 
           </div>
         </div>
-        <div className="text-white text-[24px] font-semibold font-['Poppins'] mt-20 text-center">Contact me</div>
+        <div className="text-white text-[24px] font-semibold  mt-20 text-center">Contact me</div>
         <div className='flex flex-col justify-center items-center gap-2'>
           <input className=" bg-white border border-zinc-300 px-8" type="text" placeholder="Enter your email address" />
           <button className='bg-white rounded-lg justify-center mx-auto px-2 py-1 text-center inline-flex text-black font-bold'>
