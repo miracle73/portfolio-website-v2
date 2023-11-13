@@ -10,20 +10,22 @@ import travex from '../../../public/travex.png'
 import { BiLogoFacebook } from 'react-icons/bi'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { RiTwitterXFill } from 'react-icons/ri'
+import Header from '@/Components/Header'
 
 const page = () => {
     return (
         <div className="min-h-screen max-w-screen relative font-font1">
-            <div className=" py-2 h-20 px-10 max-sm:px-2 mt-24 flex flex-col justify-center items-center pt-16">
-                <div className="text-black text-[36px] max-lg:text-[36px]  max-md:text-3xl font-bold ">My Creative Expertise</div>
+            <Header />
+            <div className=" py-2 h-20 px-10 max-sm:px-2 mt-24 flex flex-col justify-center items-center pt-5">
+                <div className="text-black text-[36px] max-lg:text-[36px]  max-md:text-3xl max-sm:text-2xl font-bold ">My Creative Expertise</div>
 
             </div>
 
 
-            <div className='flex flex-wrap items-center justify-around py-5 gap-8 my-10 max-sm:px-5'>
+            <div className='flex flex-wrap items-center justify-around py-5 max-sm:py-2 gap-8 my-10 max-sm:my-5 max-sm:px-5'>
                 <div className="w-[40%] max-sm:w-[45%] max-xsm:w-[70%] max-xsm:mx-auto max-xsm:h-fit max-xsm:p-2 h-40 max-md:h-60 max-sm:h-80 flex-col justify-center  gap-4 px-5 py-2 inline-flex bg-neutral-50 rounded-lg border border-slate-300">
-                    <div className=" text-stone-950 text-2xl text-center font-semibold ">Podcast Production</div>
-                    <div className=" text-neutral-500 text-base text-center font-normal ">Our expert team can handle every aspect of podcast production, from recording to editing, ensuring your content sounds polished and professional.</div>
+                    <div className=" text-stone-950 text-2xl text-center font-semibold ">Event Hosting</div>
+                    <div className=" text-neutral-500 text-base text-center font-normal ">Elevate your event to the next level with our professional Event Host services. With our expertise in orchestrating the event flow and fostering audience engagement, we guarantee a memorable event that leaves a lasting impression.</div>
                 </div>
                 <div className="w-[40%] max-sm:w-[45%] max-xsm:w-[70%] max-xsm:mx-auto max-xsm:h-fit max-xsm:p-2  h-40 max-md:h-60 max-sm:h-80 flex-col justify-center  gap-4 px-5 py-2 inline-flex bg-neutral-50 rounded-lg border border-slate-300">
                     <div className=" text-stone-950 text-2xl text-center font-semibold ">Content Creation</div>
@@ -31,7 +33,7 @@ const page = () => {
                 </div>
                 <div className="w-[40%] max-sm:w-[45%] max-xsm:w-[70%] max-xsm:mx-auto max-xsm:h-fit max-xsm:p-2 h-40 max-md:h-60 max-sm:h-80 flex-col justify-center  gap-4 px-5 py-2 inline-flex bg-neutral-50 rounded-lg border border-slate-300">
                     <div className=" text-stone-950 text-2xl text-center font-semibold ">Marketing & Promotion</div>
-                    <div className=" text-neutral-500 text-base text-center font-normal ">Expand your podcast's reach with our marketing and promotion services, including social media campaigns and audience growth strategies.</div>
+                    <div className=" text-neutral-500 text-base text-center font-normal ">Expand the reach of your business and services with our marketing and promotion services, including social media campaigns and audience growth strategies.</div>
                 </div>
                 <div className="w-[40%] max-sm:w-[45%] max-xsm:w-[70%] max-xsm:mx-auto max-xsm:h-fit max-xsm:p-2 h-40 max-md:h-60 max-sm:h-80 flex-col justify-center  gap-4 px-5 py-2 inline-flex bg-neutral-50 rounded-lg border border-slate-300">
                     <div className=" text-stone-950 text-2xl text-center font-semibold ">Monetization Strategies</div>

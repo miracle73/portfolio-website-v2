@@ -7,6 +7,7 @@ import './style.css'
 import { BiLogoFacebook } from 'react-icons/bi'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { RiTwitterXFill } from 'react-icons/ri'
+import Header from '@/Components/Header';
 
 
 
@@ -70,6 +71,7 @@ function page() {
     )
     return (
         <div className="min-h-screen max-w-screen relative font-font1">
+            <Header />
             <div className="border-t-2  border-white py-2 h-80 max-lg:h-[25rem] max-sm:h-[32rem] px-10 max-sm:px-2 top-24 flex flex-col  justify-center  pb-16  bg-black absolute w-full ">
                 <div className="text-white pl-20 max-md:pl-10 text-[46px] font-bold ">Newsletter</div>
                 <div className="text-white pl-20 max-md:pl-10 text-xl font-normal ">A curated collection of 20 newsletters websites for inspiration and references. Each review includes a full screenshot of the website design along with noteworthy features. These landing pages promote

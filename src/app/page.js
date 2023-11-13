@@ -7,11 +7,12 @@ import fourthPicture from '../../public/about2.jpeg'
 import { BiLogoFacebook } from 'react-icons/bi'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { RiTwitterXFill } from 'react-icons/ri'
+import Header from '@/Components/Header'
 
 export default function Home() {
   return (
     <main className="min-h-screen max-w-screen bg-black relative font-font1">
-
+      <Header />
       <div className="h-[40rem] bg-[url('../../public/finePicture2.jpeg')] flex bg-cover mt-24">
         {/* <Image src={firstPicture} alt="background picture" className='h-[40rem]' /> */}
         {/* <div className='self-center mx-auto text-white w-2/3 flex flex-col'>
@@ -21,16 +22,16 @@ export default function Home() {
         </div> */}
 
       </div>
-      <div className='mt-10 py-8 px-10 max-lg:hidden'>
+      <div id="about" className='mt-10 py-8 px-10 max-md:hidden'>
 
         <div className='flex '>
 
           <div className="w-1/2 text-white text-xl font-normal italic">
             <div className='bg-white rounded-md px-5 max-w-fit mb-8 text-black'>ABOUT ME</div>
-            <div className="  mb-3">Hey there! I'm BJ Baringo, and I'm thrilled to welcome you to my Portfolio. I'm a passionate storyteller, a lifelong explorer of ideas, and your host on this audio journey.
+            <div className="  mb-3 pr-5">Hey there! I'm BJ Baringo, and I'm thrilled to welcome you to my Portfolio. I'm a passionate storyteller, a lifelong explorer of ideas, and your host on this audio journey.
               I've always been captivated by the power of the spoken word and the magic of a well-told story.
             </div>
-            <div className="mt-5 ">Whether it's diving into fascinating conversations with thought leaders, sharing personal anecdotes, or exploring niche interests, I'm here to make your listening experience enriching and enjoyable.</div>
+            <div className="mt-5 pr-5">Whether it's diving into fascinating conversations with thought leaders, sharing personal anecdotes, or exploring niche interests, I'm here to make your listening experience enriching and enjoyable.</div>
           </div>
           <div className='w-1/2  flex flex-col'>
             <div className=' flex items-center m-auto '>
