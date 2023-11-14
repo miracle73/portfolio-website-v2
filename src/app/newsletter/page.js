@@ -82,44 +82,44 @@ function page() {
                 <div className=' max-sm:px-2 px-10 mt-5 w-full'>
                     <div className='flex items-center max-sm:flex-col justify-center '>
                         <div className='w-[30%] max-sm:border-2 h-[18rem]   max-sm:w-[90%] max-sm:mx-auto shadow-md pb-2  '>
-                            <div className=" bg-[url('../../public/new.jpg')] bg-cover hover:cursor-pointer h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
+                            <div className=" bg-[url('../../public/new.jpg')] bg-cover hover:cursor-pointer h-56 flex ">
                                 {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
 
                             </div>
-                            <div className='flex items-center justify-center  h-[22.2%] ' onClick={openModal}>
-                                <div className="text-gray-900  text-sm font-semibold   text-center uppercase">Everything u need to know about design</div>
+                            <div className='flex items-center justify-center  h-[22.2%] hover:cursor-pointer' onClick={openModal}>
+                                <div className="text-gray-900 hover:text-[#D6D6D6] text-sm font-semibold   text-center uppercase">Everything u need to know about design</div>
                             </div>
                             {modalIsOpen && modal}
                         </div>
                         <div className='w-[30%] max-sm:border-2 h-[18rem] max-sm:w-[90%] max-sm:mx-auto shadow-md pb-2 '>
-                            <div className=" bg-[url('../../public/secondnew.jpg')] bg-cover hover:cursor-pointer  h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
+                            <div className=" bg-[url('../../public/secondnew.jpg')] bg-cover hover:cursor-pointer  h-56 flex ">
                                 {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
 
                             </div>
-                            <div className='flex items-center justify-center  h-[22.2%]  ' onClick={openModal}>
-                                <div className="text-gray-900   text-sm font-semibold text-center uppercase">People and Blogs</div>
+                            <div className='flex items-center justify-center  h-[22.2%] hover:cursor-pointer ' onClick={openModal}>
+                                <div className="text-gray-900 hover:text-[#D6D6D6]  text-sm font-semibold text-center uppercase">People and Blogs</div>
                             </div>
                             {modalIsOpen && modal}
 
                         </div>
                         <div className='w-[30%] max-sm:border-2 max-sm:w-[90%] max-sm:mx-auto h-[18rem] shadow-md pb-2'>
-                            <div className=" bg-[url('../../public/thirdnew.jpg')] bg-cover hover:cursor-pointer h-56 flex hover:bg-blend-multiply hover:bg-gray-500">
+                            <div className=" bg-[url('../../public/thirdnew.jpg')] bg-cover hover:cursor-pointer h-56 flex ">
                                 {/* <div className="text-white text-2xl font-normal font-['Poppins'] mb-5">EPISODES 1</div> */}
 
                             </div>
-                            <div className='flex items-center justify-center  h-[22.2%]  ' onClick={openModal}>
-                                <div className="text-gray-900  text-sm  font-semibold  text-center uppercase">Your design inspiration</div>
+                            <div className='flex items-center justify-center  hover:cursor-pointer  h-[22.2%]  ' onClick={openModal}>
+                                <div className="text-gray-900 hover:text-[#D6D6D6] text-sm  font-semibold  text-center uppercase">Your design inspiration</div>
                             </div>
 
                             {modalIsOpen && modal}
                         </div>
                     </div>
                 </div>
-                <div className="text-black text-[24px] font-semibold  mt-10 w-full text-center">Contact me</div>
+                <div className="text-black text-[24px] font-semibold  mt-10 w-full text-center">CONTACT ME</div>
                 <div className='flex flex-col justify-center items-center gap-2 w-full'>
                     <input className=" bg-white border border-zinc-300 px-8" type="text" placeholder="Enter your email address" />
-                    <button className='bg-black rounded-lg justify-center mx-auto px-2 py-1 text-center inline-flex text-white'>
-                        submit
+                    <button className='font-semibold hover:text-gray-700 hover:cursor-pointer rounded-lg justify-center mx-auto px-2 py-1 text-center inline-flex text-black'>
+                        SUBMIT
                     </button>
                 </div>
                 <div className='border-t-2 w-full  py-5 flex max-sm:flex-col max-sm:gap-4 items-center px-10 mt-5'>

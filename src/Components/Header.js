@@ -47,28 +47,28 @@ const Header = () => {
             <div className='h-24 fixed top-0 w-full bg-black pb-3 z-10 md:hidden flex justify-center items-center'>
                 <FontAwesomeIcon icon={faBars} className="absolute top-8 left-5 w-6" style={{ color: "white" }} onClick={handleClick}
                 ></FontAwesomeIcon>
-                <div className='text-lg font-semibold text-white'>BJ BARINGO</div>
+                <div className='text-lg font-semibold text-white tracking-wide'>BJ BARINGO</div>
             </div>
             {div && <div className='fixed top-20 w-full max-h-fit bg-black pb-3 z-10 text-white pl-4 sm:hidden text-sm' onClick={handleClick}>
                 <p><Link href="/podcast"> PODCAST</Link></p>
                 <p ><Link href="/newsletter">NEWSLETTER</Link></p>
-                <p><Link href="/">BACKYARD RAV</Link></p>
+                <p><Link href="/">BACKYARD RAVE</Link></p>
                 <p><Link href="/about">ABOUT</Link></p>
                 <p><Link href="/services">SERVICES</Link></p>
             </div>}
 
             <div className='h-24 fixed top-0 w-full bg-black py-3 z-10 max-sm:hidden'>
 
-                <div className=' bg-opacity-50 text-white text-base max-xmd:text-sm max  justify-between flex items-center px-10 max-lg:px-5 max-md:px-3 max-sm:px-2 h-full'>
-                    <div className='justify-around flex items-center gap-8 max-lg:gap-4 max-xmd:gap-3 max-md:gap-2 max-lg:justify-evenly'>
+                <div className=' bg-opacity-50 text-white text-base max-xmd:text-sm max  justify-between flex items-center px-10 max-lg:px-5 max-md:px-1 max-sm:px-2 h-full'>
+                    <div className='justify-around flex items-center gap-8 max-lg:gap-4 max-xmd:gap-3 max-md:gap-1 max-lg:justify-evenly'>
                         <p><Link href="/">SHOP</Link></p>
                         <p><Link href="/services">SERVICES</Link></p>
                         <p><Link href="/podcast"> PODCAST</Link></p>
                     </div>
-                    <div className='text-4xl max-lg:text-2xl max-md:text-xl font-semibold flex flex-col items-center justify-center gap-4'><p>BJ BARINGO</p>
-                        <p className='text-xl max-md:text-lg font-normal'>DJ Showman</p></div>
-                    <div className='justify-around flex items-center gap-8 max-lg:gap-4 max-xmd:gap-3 max-md:gap-2 max-lg:justify-evenly'>
-                        <p><Link href="/">BACKYARD RAV</Link></p>
+                    <div className='text-4xl max-lg:text-2xl max-md:text-xl font-semibold flex flex-col items-center justify-center gap-4 '><p className='tracking-[0.2em]'>BJ BARANGO</p>
+                        <p className='text-xl max-md:text-lg font-normal'>THE SHOWMAN</p></div>
+                    <div className='justify-around flex items-center gap-8 max-lg:gap-4 max-xmd:gap-3 max-md:gap-1 max-lg:justify-evenly'>
+                        <p><Link href="/">BACKYARD RAVE</Link></p>
                         <p><Link href={windowWidth > 768 ? "/#about" : "/about"}>ABOUT</Link></p>
                         <p><Link href="/newsletter">NEWSLETTER</Link></p>
                     </div>
