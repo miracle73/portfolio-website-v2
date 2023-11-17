@@ -7,7 +7,7 @@ const page = () => {
     return (
         <div className="min-h-screen max-w-screen relative font-font1 " >
             <Header />
-            <div className="border-t-2  border-white  top-24  absolute w-full pt-10 flex flex-col items-center">
+            <div className="border-t-2  border-white  top-24  absolute w-full pt-12 flex flex-col items-center">
                 <div className=' flex items-center m-auto rounded-full '>
 
                     <Image src={fourthPicture} alt="second Picture" className='w-96 h-80 max-lg:w-72 max-lg:h-60 max-md:w-64 max-md:h-56 max-sm:w-56 max-sm:h-52 rounded-full '></Image>
