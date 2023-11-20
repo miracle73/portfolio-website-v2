@@ -23,21 +23,21 @@ const page = () => {
 
 
             <div className='flex flex-wrap items-center justify-around py-5 max-sm:py-2 gap-8 my-10 max-sm:my-5 max-sm:px-5'>
-                <div className="w-[40%] max-sm:w-[45%] max-xsm:w-[70%] max-xsm:mx-auto max-xsm:h-fit max-xsm:p-2 h-40 max-md:h-60 max-sm:h-80 flex-col justify-center  gap-4 px-5 py-2 inline-flex bg-neutral-50 rounded-lg border border-slate-300">
+                <div className="w-[40%] max-sm:w-[45%] max-xsm:w-[70%] max-xsm:mx-auto max-xsm:h-fit max-xsm:p-2 h-40 max-md:h-60 max-sm:h-80 flex-col justify-center  gap-1 px-5 py-2 inline-flex bg-neutral-50 rounded-lg border border-slate-300">
                     <div className=" text-stone-950 text-2xl text-center font-semibold ">Event Hosting</div>
                     <div className=" text-neutral-500 text-base text-center font-normal ">Elevate your event to the next level with our professional Event Host services. With our expertise in orchestrating the event flow and fostering audience engagement, we guarantee a memorable event that leaves a lasting impression.</div>
                 </div>
-                <div className="w-[40%] max-sm:w-[45%] max-xsm:w-[70%] max-xsm:mx-auto max-xsm:h-fit max-xsm:p-2  h-40 max-md:h-60 max-sm:h-80 flex-col justify-center  gap-4 px-5 py-2 inline-flex bg-neutral-50 rounded-lg border border-slate-300">
+                <div className="w-[40%] max-sm:w-[45%] max-xsm:w-[70%] max-xsm:mx-auto max-xsm:h-fit max-xsm:p-2  h-40 max-md:h-60 max-sm:h-80 flex-col justify-center  gap-1 px-5 py-2 inline-flex bg-neutral-50 rounded-lg border border-slate-300">
                     <div className=" text-stone-950 text-2xl text-center font-semibold ">Content Creation</div>
                     <div className=" text-neutral-500 text-base text-center font-normal ">Need help with brainstorming and creating compelling content? We offer content strategy and scriptwriting services to keep your audience engaged.</div>
                 </div>
-                <div className="w-[40%] max-sm:w-[45%] max-xsm:w-[70%] max-xsm:mx-auto max-xsm:h-fit max-xsm:p-2 h-40 max-md:h-60 max-sm:h-80 flex-col justify-center  gap-4 px-5 py-2 inline-flex bg-neutral-50 rounded-lg border border-slate-300">
+                <div className="w-[40%] max-sm:w-[45%] max-xsm:w-[70%] max-xsm:mx-auto max-xsm:h-fit max-xsm:p-2 h-40 max-md:h-60 max-sm:h-80 flex-col justify-center  gap-1 px-5 py-2 inline-flex bg-neutral-50 rounded-lg border border-slate-300">
                     <div className=" text-stone-950 text-2xl text-center font-semibold ">Marketing & Promotion</div>
                     <div className=" text-neutral-500 text-base text-center font-normal ">Expand the reach of your business and services with our marketing and promotion services, including social media campaigns and audience growth strategies.</div>
                 </div>
-                <div className="w-[40%] max-sm:w-[45%] max-xsm:w-[70%] max-xsm:mx-auto max-xsm:h-fit max-xsm:p-2 h-40 max-md:h-60 max-sm:h-80 flex-col justify-center  gap-4 px-5 py-2 inline-flex bg-neutral-50 rounded-lg border border-slate-300">
-                    <div className=" text-stone-950 text-2xl text-center font-semibold ">Monetization Strategies</div>
-                    <div className=" text-neutral-500 text-base text-center font-normal ">Interested in making your podcast financially sustainable? We offer guidance on monetization, sponsorships, and ad integration.</div>
+                <div className="w-[40%] max-sm:w-[45%] max-xsm:w-[70%] max-xsm:mx-auto max-xsm:h-fit max-xsm:p-2 h-40 max-md:h-60 max-sm:h-80 flex-col justify-center  gap-1 px-5 py-2 inline-flex bg-neutral-50 rounded-lg border border-slate-300">
+                    <div className=" text-stone-950 text-2xl text-center font-semibold ">Media Production</div>
+                    <div className=" text-neutral-500 text-base text-center font-normal ">Elevate the quality and impact of your services with our media production services. We provide all the required resources to give your business that unique brans that resonates with your target audience</div>
                 </div>
             </div>
             <div className=" text-center text-stone-950 text-[34px] max-md:text-[24px] max-sm:text-xl font-semibold  ">What Others Are Saying...</div>
