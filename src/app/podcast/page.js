@@ -41,7 +41,7 @@ function page() {
 
     return (
         <div className="min-h-screen max-w-screen relative font-font1" >
-            <Header />
+            {/* <Header /> */}
             <div className=" py-2 h-20 px-10 max-sm:px-2 mt-24 flex flex-col justify-center items-center pt-24 max-lg:pt-16">
                 <div className="text-black text-[46px] max-lg:text-[36px] max-md:text-[26px] max-sm:text-xl font-bold ">Explore Our Podcasts</div>
                 <div className="text-black text-xl max-lg:text-lg max-md:text-base max-sm:text-sm font-normal  ">Listen to our Latest Podcast</div>
